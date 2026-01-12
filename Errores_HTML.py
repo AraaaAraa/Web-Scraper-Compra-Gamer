@@ -8,7 +8,8 @@ class errores_HTML():
     def ingreso_errores(self, url):
         
         try:
-            response = requests.get(url)
+            response = requests.get(url, timeout=10)
+            response.raise_for_status()
             html_content = response.content
             soup = BeautifulSoup(html_content, 'html.parser')
             
@@ -20,4 +21,5 @@ class errores_HTML():
             print(f"Error de Conexión: No se pudo conectar a {url}. Verifique su conexión.")
             soup = None
         return soup
+
 
