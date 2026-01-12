@@ -13,4 +13,10 @@ class WebScreaper:
         
         sopi = self.pasador.ingreso_errores(url)
         datitos = self.datos.parser(sopi)
+
         self.archivocsv.guardar_csv(datitos)
+if __name__ == "__main__":
+    scraper = WebScreaper()
+    # Usamos la URL que definiste en la clase o pasamos una nueva
+    scraper.inicio(scraper.url)
+    print("Proceso finalizado con éxito.")
