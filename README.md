@@ -20,4 +20,6 @@ El código se divide en módulos según su responsabilidad:
 - `Busqueda_contenido.py`: Se encarga de analizar el HTML y extraer los datos específicos.
 - `Errores_HTML.py`: Gestiona las conexiones y el manejo de excepciones HTTP.
 - `Crear_csv.py`: Clase dedicada a la creación y escritura del archivo de salida.
+
+
 ##¡¡¡Este proyecto forma parte de mi camino de aprendizaje en el desarrollo de software, enfocándome en escribir código limpio, reutilizable y profesional!!!
